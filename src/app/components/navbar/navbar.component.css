@@ -1,0 +1,25 @@
+.container {
+  background-color: rgba(244,138,11,1);
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 3.5em;
+  padding-top: .35em;
+  box-shadow: 0 0 20px orange;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.75em;
+  color: rgba(26,0,127,1);
+}
+
+.links {
+  padding-top: .665em;
+}
+
+.links div a {
+  font-size: 1.2em;
+  color: rgba(26,0,127,1);
+}

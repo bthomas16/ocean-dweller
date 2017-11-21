@@ -1,0 +1,13 @@
+.container {
+  background-color: darkblue;
+  width: 100vw;
+  background-size: contain;
+  background: linear-gradient(rgba(26,0,127, 0.35), rgba(26,0,127, 0.35)),
+                rgba(0,0,0,0.55) url('../../../assets/bg.png') no-repeat center;
+
+}
+
+.content {
+  padding: .5em;
+  color: white;
+}

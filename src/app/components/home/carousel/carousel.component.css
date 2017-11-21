@@ -1,0 +1,92 @@
+.arrows {
+  position: absolute;
+  justify-content: space-between;
+  z-index: 1000;
+  margin-top: 11%;
+}
+
+.leftArrow {
+  justify-content: flex-start;
+  /*padding-left: 5%;*/
+}
+.rightArrow {
+  justify-content: flex-end;
+  /*padding-right: 5%;*/
+}
+
+.arrows .flex i {
+  color: white;
+  font-size: 2em;
+}
+
+
+
+
+
+
+
+
+.imgDiv p {
+  color: white;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.name {
+  margin-bottom: .5em;
+}
+
+.miniImgs {
+  margin-top: 4%;
+}
+
+.miniImgs img {
+  min-height: 75px;
+}
+
+.specs {
+  border: 1px solid lightgrey;
+  background-color: white;
+  border-radius: 5px;
+  color: #354d9b;
+  margin-top: 1em;
+  padding-top: .25em;
+  padding-bottom: .25em;
+}
+
+.specs button:hover {
+  text-decoration: line-through;
+}
+
+.price {
+  margin-top: 1em;
+  border: 1px solid lightgrey;
+  background-color: white;
+  border-radius: 5px;
+  color: #354d9b;
+}
+
+.price div button {
+  margin-top: 2%;
+}
+
+.writeUps {
+  color: white;
+  font-size: 1.25em;
+}
+
+
+
+@media(max-width:475px) {
+  .writeUps {
+    margin-top: 1em;
+  }
+
+  .writeUps .row div {
+    margin-left: 1em;
+  }
+
+  .miniImgs {
+    margin-top: 2%;
+  }
+}

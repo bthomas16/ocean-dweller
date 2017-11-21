@@ -1,0 +1,68 @@
+.top {
+  margin: 0;
+  margin-top: 3.5em;
+  background: linear-gradient(rgba(26,0,127, 0.35), rgba(26,0,127, 0.35)),
+                rgba(0,0,0,0.55) url('../../../assets/bg.png') no-repeat center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topContainer {
+  padding: 0;
+  margin: 0;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  z-index: 1000;
+}
+
+.bottom {
+  background: linear-gradient(rgba(0,0,0, 0.55), rgba(0,0,0, 0.55)),
+                rgba(0,0,0,0.55) url('../../../assets/orange5.jpg') no-repeat center;
+                background-size: cover;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+/*.signUpWrapper {
+  display: none;
+  z-index: 100000;
+}*/
+
+.signUp {
+  z-index: 100000;
+  width: 40%;
+  border: 2px solid orange;
+  background-color: #354d9b;
+  padding: 1.5em;
+  color: white;
+  top: 10%;
+  left: 29.75%;
+  position: fixed;
+  padding: 2em;
+  opacity: 0;
+}
+
+p.centerText {
+  margin-top: 1em;
+  font-size: 1.15em;
+}
+
+
+@media(max-width:475px) {
+
+  .flex {
+    /*background-image: url('../../../assets/bgSmall.png');*/
+  }
+  .container {
+    padding-top: 1em;
+  }
+}
+
+.loader {
+  /*width: 100vw;*/
+  /*height: 100vh;*/
+  position: absolute;
+  background-color: rgba(255,255,255,.05);
+  /*z-index: 100000;*/
+  top: 20%;
+}

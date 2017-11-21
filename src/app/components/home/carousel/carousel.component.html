@@ -1,0 +1,94 @@
+<div class="flex arrows" (click)="hideModal()">
+  <div class="flex leftArrow">
+    <i class="fa fa-chevron-left hover" aria-hidden="true" (click)="change()"></i>
+  </div>
+  <div class="flex rightArrow">
+    <i class="fa fa-chevron-right hover" aria-hidden="true" (click)="change()"></i>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+
+    <!-- 4 Columns - main img & title -->
+    <div class="col-md-4 col-xs-12 imgDiv" (click)="hideModal()">
+      <div class="row">
+        <div class="col-md-12 col-xs-10 col-xs-offset-1 name">
+          <p>{{Watches[indexValue].watch.name}}</p>
+        </div>
+        <div class="col-md-12 col-xs-10 col-xs-offset-1">
+          <img [src]="Watches[indexValue].watch.imgs[currentImg]" alt="" class=" img-responsive img-thumbnail" width="100%;">
+        </div>
+      </div>
+    </div>
+
+  <!-- 4 Columns - mini imgs -->
+    <div class="col-lg-4 col-md-3 col-xs-12 miniImgs">
+      <div class="row">
+        <div class="col-md-12 col-xs-12" (click)="hideModal()">
+          <img [src]="Watches[indexValue].watch.imgs[0]" alt="" alt=""  class="col-lg-3 col-md-6 col-xs-3 img-responsive" (click)="currentImg = 0">
+          <img [src]="Watches[indexValue].watch.imgs[1]" alt="" alt=""  class="col-lg-3 col-md-6 col-xs-3 img-responsive" (click)="currentImg = 1">
+          <img [src]="Watches[indexValue].watch.imgs[2]" alt="" alt=""  class="col-lg-3 col-md-6 col-xs-3 img-responsive" (click)="currentImg = 2">
+          <img [src]="Watches[indexValue].watch.imgs[3]" alt="" alt=""  class="col-lg-3 col-md-6 col-xs-3 img-responsive" (click)="currentImg = 3">
+        </div>
+
+        <!-- 10 md columns - specs -->
+        <div class="col-md-10 col-xs-10 col-xs-offset-1 specs" (click)="hideModal()">
+          <div class="row">
+            <div class="col-md-10">
+              <p class="flex leftText"><strong>Diameter: </strong>&nbsp; {{Watches[indexValue].watch.specs.diameter}}</p>
+            </div>
+            <div class="col-md-10">
+              <p class="flex leftText"><strong>Lug Width: </strong>&nbsp; {{Watches[indexValue].watch.specs.lugWidth}}</p>
+            </div>
+            <div class="col-md-10">
+              <p class="flex leftText"><strong>Case: </strong>&nbsp; {{Watches[indexValue].watch.specs.case}}</p>
+            </div>
+            <div class="col-md-10">
+              <p class="flex leftText"><strong>Depth: </strong>&nbsp; {{Watches[indexValue].watch.specs.waterResistance}}</p>
+            </div>
+            <div class="col-md-10">
+              <p class="flex leftText"><strong>Movement: </strong>&nbsp; {{Watches[indexValue].watch.specs.movement}}</p>
+            </div>
+          </div>
+        </div>
+
+    <!-- 10 md columns - price -->
+        <div class="col-md-10 col-xs-10 col-xs-offset-1 price">
+          <div class="row" (click)="hideModal()">
+            <div class="col-md-5 col-xs-5 ">
+              <h4>Price: {{Watches[indexValue].watch.price}}</h4>
+            </div>
+            <div class="col-md-7 col-xs-7">
+              <button class="btn btn-warning" disabled>Buy Now</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-xs-4 ">
+              <h6 class="noHover" style="color:grey;">QTY: 0/1</h6>
+            </div>
+            <div class="col-md-8 col-xs-8 ">
+              <h6 class="hover" (click)="showModal()"><strong>Reserve Your Ocean Dweller</strong></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- 4 Columns - Write Up -->
+    <div class="col-md-4 col-xs-12 writeUps" (click)="hideModal()">
+      <div class="row">
+        <div class="col-md-12 col-xs-11">
+          <p>{{Watches[indexValue].watch.writeUp1}}</p>
+        </div>
+        <div class="col-md-12 col-xs-11">
+          <p>{{Watches[indexValue].watch.writeUp2}}</p>
+        </div>
+        <div class="col-md-12 col-xs-11">
+          <p>{{Watches[indexValue].watch.writeUp3}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

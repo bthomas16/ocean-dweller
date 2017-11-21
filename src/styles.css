@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  /*background-color: rgba(26,0,127,.35);*/
+}
+
+.flex {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.noHover:hover {
+  cursor: not-allowed;
+}
+
+.hover:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.leftText {
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.rightText {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.centerText {
+  text-align: center;
+  justify-content: center;
+}
+
+.border {
+  border: 2px solid black;
+}
